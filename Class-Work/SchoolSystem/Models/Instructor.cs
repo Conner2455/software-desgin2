@@ -10,7 +10,7 @@ public class Instructor {
 
     public required string FirstName { get; set; }
 
-    public required string LastName { get; set; }
+    public required string LastName { get; set; } 
 
     [ForeignKey("Department")]
     public int DepartmentId { get; set; }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SchoolSystem.Models;
 
 public class Department {
-    [Key]
+    [Key] 
     public int Id { get; set; }
 
     public required string Name { get; set; }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace SchoolSystem.Models;
 
 public class Student {
-    [Key]
+    [Key] 
     public int Id { get; set; }
 
     public required string FirstName { get; set; }
