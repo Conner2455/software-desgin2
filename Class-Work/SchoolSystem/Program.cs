@@ -21,3 +21,5 @@ _seedingService = _serviceProvider.GetRequiredService<SeedingService>();
 
 // Call method to seed the database
 await _seedingService.SeedDatabase();
+
+
