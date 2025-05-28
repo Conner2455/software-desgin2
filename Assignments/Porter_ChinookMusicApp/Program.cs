@@ -74,11 +74,11 @@ foreach (var playlist in playlistsWithTracks) {
     Console.WriteLine($"{playlist.Name} ({playlist.Tracks.Count} tracks)");
 }
 
-// Console.WriteLine("\n--- GetAverageDurationByGenre ---");
-// var avgDurationByGenre = await _musicQueryService.GetAverageDurationByGenre();
-// foreach (var stat in avgDurationByGenre) {
-//     Console.WriteLine($"{stat.Label}: {stat.Value} {stat.ValueMetric}");
-// }
+Console.WriteLine("\n--- GetAverageDurationByGenre ---");
+var avgDurationByGenre = await _musicQueryService.GetAverageDurationByGenre();
+foreach (var stat in avgDurationByGenre) {
+    Console.WriteLine($"{stat.Label}: {stat.Value} {stat.ValueMetric}");
+}
 
 Console.WriteLine("\n--- GetArtistsWithoutAlbums ---");
 var artistsWithoutAlbums = await _musicQueryService.GetArtistsWithoutAlbums();

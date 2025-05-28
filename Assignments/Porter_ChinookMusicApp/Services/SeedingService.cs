@@ -13,5 +13,5 @@ public class SeedingService
     {
         _context = context;
     }
-    public  SeedDatabase(){}
+    public async Task SeedDatabase()
 }

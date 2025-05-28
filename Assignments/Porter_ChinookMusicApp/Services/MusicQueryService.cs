@@ -168,14 +168,13 @@ public class MusicQueryService
             .ToListAsync();
     }
 
-    // #17
-    // public async Task<List<Track>> GetTracksByPlaylistId(int playlistId)
-    // {
-    //     return await _context.Playlists
-    //         .Where(playlist => playlist.PlaylistId == playlistId)
-    //         .Select(playlist => playlist.Tracks)
-    //         .ToListAsync();
-    // }
+     public async Task<List<Track>> GetTracksByPlaylistId(int playlistId)
+    {
+        return await _context.Playlists
+            .Where(p => p.PlaylistId == playlistId)
+            .SelectMany(p => p.Tracks)
+            .ToListAsync();
+    }
 
     public async Task<Playlist?> GetPlaylistWithMostTracks()
     {
