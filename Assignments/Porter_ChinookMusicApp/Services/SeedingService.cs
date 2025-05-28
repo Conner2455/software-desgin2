@@ -14,4 +14,8 @@ public class SeedingService
         _context = context;
     }
     public async Task SeedDatabase()
+    {
+        // TODO: Add seeding logic here
+        await Task.CompletedTask;
+    }
 }
