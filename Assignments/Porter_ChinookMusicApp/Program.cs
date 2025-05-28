@@ -3,20 +3,16 @@ using Porter_ChinookMusicApp.Services;
 using Porter_ChinookMusicApp.Data;
 
 ServiceProvider _serviceProvider;
-SeedingService _seedingService;
 MusicQueryService _musicQueryService;
 
 var services = new ServiceCollection();
 
 services.AddDbContext<ApplicationDbContext>();
-services.AddScoped<SeedingService>();
 services.AddScoped<MusicQueryService>();
 
 _serviceProvider = services.BuildServiceProvider();
-_seedingService = _serviceProvider.GetRequiredService<SeedingService>();
 _musicQueryService = _serviceProvider.GetRequiredService<MusicQueryService>();
 
-await _seedingService.SeedDatabase();
 
 
 
