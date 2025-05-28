@@ -1,0 +1,6 @@
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.csproj.AssemblyReference.cache
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.AssemblyInfoInputs.cache
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.AssemblyInfo.cs
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.csproj.CoreCompileInputs.cache
+C:\Users\w4045837\OneDrive - Western Wisconsin Technical College\Desktop\software-design2-master\software-desgin2\Assignments\Porter_ChinookMusicApp\obj\Debug\net9.0\Porter_ChinookMusicApp.sourcelink.json
