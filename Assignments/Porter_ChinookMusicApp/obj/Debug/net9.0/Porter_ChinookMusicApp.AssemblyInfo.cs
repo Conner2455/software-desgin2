@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Porter_ChinookMusicApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0749b7b072b1b7946bcffe6fc900eb61404ddd74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+593312048953a8285d376eb0921b842d7b133c34")]
 [assembly: System.Reflection.AssemblyProductAttribute("Porter_ChinookMusicApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Porter_ChinookMusicApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

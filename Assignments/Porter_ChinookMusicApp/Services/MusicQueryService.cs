@@ -21,11 +21,9 @@ public class MusicQueryService
 
     public async Task<List<Artist>> GetAllArtistsWithAlbums()
     {
-        // SELECT Artist.Albums
-        // FROM Artist
         return await _context.Artist
+            .Where(artist => artist.Albums.Count > 0)
             .Include(artist => artist.Albums)
-            // .Select(artist => artist)
             .ToListAsync();
     }
 
@@ -33,7 +31,6 @@ public class MusicQueryService
     {
         return await _context.Artist
             .Where(artist => artist.Albums.Count > 1)
-            // .Select(artist => artist)
             .ToListAsync();
     }
 
@@ -87,6 +84,7 @@ public class MusicQueryService
     public async Task<List<Playlist>> GetAllPlaylistsWithTracks()
     {
         return await _context.Playlist
+            .Where(playlist => playlist.Tracks.Count > 0)
             .Include(playlist => playlist.Tracks)
             .ToListAsync();
     }
@@ -122,11 +120,14 @@ public class MusicQueryService
     public async Task<List<TrackDetails>> GetTrackDetails()
     {
         return await _context.Track
+            .Include(track => track.Album)
+            .ThenInclude(track => track.Artist)
             .Select(track => new TrackDetails
             {
+
                 Track = track.Name,
                 Album = track.Album.Title,
-                Artist = track.Composer
+                Artist = track.Album.Artist.Name
             })
             .ToListAsync();
     }
